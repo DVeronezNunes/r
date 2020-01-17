@@ -1,0 +1,78 @@
+<xs:schema xmlns:tns="http://productinfo" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://productinfo" elementFormDefault="qualified">
+	<xs:element name="productinfo">
+		<xs:complexType>
+			<xs:sequence maxOccurs="unbounded">
+				<xs:element name="version" type="tns:version"/>
+			</xs:sequence>
+			<xs:attribute name="name" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="version">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="diff" type="tns:diff"/>
+			<xs:element name="full" type="tns:full"/>
+		</xs:choice>
+		<xs:attribute name="v" type="xs:int"/>
+		<xs:attribute name="r" type="xs:int"/>
+		<xs:attribute name="p" type="xs:int"/>
+		<xs:attribute name="b" type="xs:int"/>
+		<xs:attribute name="c" type="xs:int"/>
+		<xs:attribute name="tv" type="xs:string"/>
+	</xs:complexType>
+	<xs:complexType name="diff">
+		<xs:sequence maxOccurs="unbounded">
+			<xs:element name="oracle" type="tns:oracle"/>
+		</xs:sequence>
+		<xs:attribute name="v" type="xs:int"/>
+		<xs:attribute name="r" type="xs:int"/>
+		<xs:attribute name="p" type="xs:int"/>
+		<xs:attribute name="b" type="xs:int"/>
+		<xs:attribute name="c" type="xs:int"/>
+		<xs:attribute name="tv" type="xs:string"/>
+		<xs:attribute name="pkg" type="xs:string"/>
+		<xs:attribute name="name" type="xs:string"/>
+		<xs:attribute name="basecomparer" type="xs:string"/>
+		<xs:attribute name="compversion" type="xs:string"/>
+	</xs:complexType>
+	<xs:complexType name="full">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="oracle" type="tns:oracle"/>
+		</xs:choice>
+		<xs:attribute name="pkg" type="xs:string"/>
+		<xs:attribute name="name" type="xs:string"/>
+		<xs:attribute name="basecomparer" type="xs:string"/>
+		<xs:attribute name="compversion" type="xs:string"/>
+	</xs:complexType>
+	<xs:complexType name="oracle">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="windows" type="tns:windows"/>
+			<xs:element name="linux" type="tns:linux"/>
+		</xs:choice>
+		<xs:attribute name="tag" type="xs:string" default="any"/>
+	</xs:complexType>
+	<xs:complexType name="windows">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="executable" type="tns:executable"/>
+			<xs:element name="basecomparer" type="tns:basecomparer" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="compversion" type="tns:basecomparer" minOccurs="0" maxOccurs="1"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="linux">
+		<xs:sequence maxOccurs="unbounded">
+			<xs:element name="executable" type="tns:executable"/>
+			<xs:element name="basecomparer" type="tns:basecomparer" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="compversion" type="tns:basecomparer" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="executable">
+		<xs:attribute name="path" type="xs:string"/>
+		<xs:attribute name="log" type="xs:string"/>
+		<xs:attribute name="productcode" type="xs:string" default="all"/>
+	</xs:complexType>
+	<xs:complexType name="basecomparer">
+		<xs:attribute name="path" type="xs:string"/>
+	</xs:complexType>
+	<xs:complexType name="compversion">
+		<xs:attribute name="path" type="xs:string"/>
+	</xs:complexType>	
+</xs:schema>

@@ -1,0 +1,10 @@
+Connecting to TRITSAP/******...
+
+PARAMETERS:
+--------------------------------------------
+> db_file_multiblock_read_count = 128 (recommended = 8 )
+> open_cursors = 300 (recommended >= 500)
+> optimizer_mode = ALL_ROWS (recommended FIRST_ROWS_10)
+> optimizer_index_caching = 0 (recommended >= 95)
+> optimizer_dynamic_sampling = 2 (recommended = 1 )
+

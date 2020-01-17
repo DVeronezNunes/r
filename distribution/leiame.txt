@@ -1,0 +1,60 @@
+#################################################
+#		                                            #
+#        Instalador de Scripts Softway          #
+#                                               #
+#################################################
+-------------------------------------------------
+Índice:
+-------------------------------------------------
+1. Usuários Windows
+	1.1 Verificações Iniciais
+		1.1.1 Java
+		1.1.2 Oracle
+		1.1.3 Pacotes Softway
+	1.2 Executando o Instalador
+2. Usuários Linux
+3. Contato
+-------------------------------------------------
+-------------------------------------------------
+
+-------------------------------------------------
+1. Usuários Windows
+-------------------------------------------------
+
+1.1 Verificações Iniciais
+
+1.1.1 Java
+
+Para executar o Instalador de Scripts Softway em ambiente Windows será necessário ter o runtime (bibliotecas de execução) do Java instalado na máquina. Uma maneira simples de validar a existência do Java na máquina é abrir um prompt DOS (Iniciar->Executar e digite "cmd" sem aspas) e digitar o comando "java -version" sem aspas. O comando executará com sucesso caso o Java Runtime (JRE) esteja instalado na máquina e dirá qual versão que foi instalada. O instalador precisará da versão 1.5.0 update 16 para cima.
+
+1.1.2 Oracle
+
+Para executar os scripts no Oracle será preciso ter o cliente de conexão com o banco instalado na máquina. Caso não tenha certeza da instalação do mesmo e não saiba fazer por si só, consulte um DBA ou suporte especializado.
+Uma vez com o cliente instalado, será preciso verificar a existência e coêrencia da chave de registro ORACLE_HOME, localizada no caminho HKEY_LOCAL_MACHINE\SOFTWARE\ORACLE. Ela deve apontar para o diretório de instalação de seu cliente de conexão com o banco. Para fazer a verificação basta ir em Iniciar->Executar e digitar "regedit" sem aspas (se não tiver acesso contate o administrador da sua rede) e procurar a chave no caminho especificado acima.
+
+1.1.3 Pacotes Softway
+
+O Instalador de Scripts Softway trabalha com pacotes de scripts gerados pela Softway. Os pacotes devem ficar na pasta "pacotes" do instalador e devem ser baixados diretamente do FTP.
+
+
+1.2 Executando o Instalador
+
+Na pasta do instador, existe um atalho chamado InstaladorScriptsSoftway que deve ser executado para iniciar o instalador. Caso queira mover o atalho de lugar, será preciso abrir suas propriedades e mudar o valor do "Iniciar Em" para a pasta na qual o instalador foi copiado.
+
+
+
+-------------------------------------------------
+2. Usuários Linux
+-------------------------------------------------
+
+Ainda não disponível nesta versão.
+
+
+
+-------------------------------------------------
+3. Contato
+-------------------------------------------------
+
+Caso tenha problemas, favor entrar em contato com a Softway pelo email scripts@sfw.com.br ou através do telefone (XX)XXXX-XXXX.
+
+	

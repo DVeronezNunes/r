@@ -1,0 +1,35 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/distribution/lib/saxpath.jar!/" />
+      <root url="jar://$PROJECT_DIR$/distribution/lib/xmlbeans-qname.jar!/" />
+      <root url="jar://$PROJECT_DIR$/distribution/lib/jsr173_1.0_api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/distribution/lib/xalan.jar!/" />
+      <root url="jar://$PROJECT_DIR$/distribution/lib/mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/distribution/lib/WinRegistry-4.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/distribution/lib/xpp3_min-1.1.4c.jar!/" />
+      <root url="jar://$PROJECT_DIR$/distribution/lib/swing-worker-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/distribution/lib/jdom.jar!/" />
+      <root url="jar://$PROJECT_DIR$/distribution/lib/productinfo.jar!/" />
+      <root url="jar://$PROJECT_DIR$/distribution/lib/xerces.jar!/" />
+      <root url="jar://$PROJECT_DIR$/distribution/lib/ojdbc14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/distribution/lib/ojdbc6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/distribution/lib/compare.jar!/" />
+      <root url="jar://$PROJECT_DIR$/distribution/lib/appframework-1.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/distribution/lib/jaxen.jar!/" />
+      <root url="jar://$PROJECT_DIR$/distribution/lib/ojdbc7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/distribution/lib/swing-layout-1.0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/distribution/lib/xbean_xpath.jar!/" />
+      <root url="jar://$PROJECT_DIR$/distribution/lib/swing-layout-1.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/distribution/lib/xbean.jar!/" />
+      <root url="jar://$PROJECT_DIR$/distribution/lib/xmlpublic.jar!/" />
+      <root url="jar://$PROJECT_DIR$/distribution/lib/kotlin-runtime.jar!/" />
+      <root url="jar://$PROJECT_DIR$/distribution/lib/xstream-1.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/distribution/lib/resolver.jar!/" />
+      <root url="jar://$PROJECT_DIR$/distribution/lib/AbsoluteLayout.jar!/" />
+      <root url="jar://$PROJECT_DIR$/distribution/lib/xml-apis.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

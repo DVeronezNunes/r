@@ -1,0 +1,17 @@
+<productinfo xmlns="http://productinfo" name="CAMBIO_EXP_SYS">
+
+    <version v="8" r="7" p="2">
+       <diff v="8" r="7" p="0">
+       		<oracle>
+	       		<windows>
+	       			<executable path="\sasa\sas\sas.bat" />
+	       			<executable path="\sasa\sas\sas2.bat" />
+	       		</windows>
+	       		<linux>
+	       			<executable path="/sasa/sas/sas.sh" />
+	       		</linux>
+	       	</oracle>
+       </diff>
+    </version>
+      
+</productinfo>
